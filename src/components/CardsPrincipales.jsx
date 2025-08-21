@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ContratoForm from "./FormContrato";
 
 export const CardsPrincipales = () => {
   return (
@@ -14,6 +15,7 @@ export const CardsPrincipales = () => {
           />
         </div>
         <h2 className="mt-4 text-lg font-semibold">Ingresar Contrato</h2>
+        <ContratoForm />
       </div>
       </Link>
 
