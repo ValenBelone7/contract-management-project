@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <CardsPrincipales></CardsPrincipales>
+      <CardsPrincipales />
     </div>
   );
 }
