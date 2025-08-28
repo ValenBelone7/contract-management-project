@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import CardsPrincipales from "./components/CardsPrincipales";
+import Hero from "./components/Hero";
 import FormContrato from "./components/FormContrato";
-import Buscar from "./pages/Buscar";
+import ManejoContrato from "./components/ManejoContrato";
 import { Header } from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [contratos, setContratos] = useState(
@@ -22,7 +23,7 @@ export default function App() {
       <Routes>
         <Route
           path="/"
-          element={<CardsPrincipales />}
+          element={<Hero />}
         />
         <Route
           path="/contrato"
@@ -30,9 +31,10 @@ export default function App() {
         />
         <Route
           path="/buscar"
-          element={<Buscar />}
+          element={<ManejoContrato />}
         />
       </Routes>
+      <Footer />
     </div>
   );
 }

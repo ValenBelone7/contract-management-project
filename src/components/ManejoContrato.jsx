@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import FormContrato from "../components/FormContrato";
+import FormContrato from "./FormContrato";
 
 export default function Buscar() {
   const [contratos, setContratos] = useState([]);
@@ -55,7 +55,7 @@ export default function Buscar() {
             <strong>Propietario:</strong> {c.propietarioNombre} {c.propietarioApellido[0]}.
             {" - DNI: "} {c.propietarioDni}
           </p>
-          <p><strong>Dirección de la propiedad:</strong> {c.propietarioDireccion}</p>
+          <p><strong>Dirección de la propiedad:</strong> {c.propiedadDireccion}</p>
           <p><strong>Fecha Inicio:</strong> {c.fechaInicio}</p>
           <p><strong>Fecha Fin:</strong> {c.fechaFin}</p>
           <p><strong>Monto:</strong> ${c.montoMensual}</p>
