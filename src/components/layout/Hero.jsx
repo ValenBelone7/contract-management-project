@@ -4,7 +4,7 @@ import { faMagnifyingGlass, faFileContract } from "@fortawesome/free-solid-svg-i
 
 export default function Hero() {
   return (
-    <div className="bg-gray-900 relative isolate px-6 pt-14 lg:px-8">
+    <section className="bg-gray-900 relative isolate px-6 pt-14 lg:px-8">
       {/* Fondo superior */}
       <div
         aria-hidden="true"
@@ -61,6 +61,6 @@ export default function Hero() {
           }}
         />
       </div>
-    </div>
+    </section>
   );
 }

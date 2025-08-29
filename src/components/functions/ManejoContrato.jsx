@@ -81,7 +81,3 @@ export default function Buscar() {
     </div>
   );
 }
-
-
-
-

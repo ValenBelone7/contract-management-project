@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,40 +52,49 @@ export const Header = () => {
 
         {/* Menú escritorio */}
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-sm font-semibold text-white hover:text-indigo-400">
+
+          <Link to="/" className="text-sm font-semibold text-white hover:text-indigo-400">
             Inicio
-          </a>
-          <a href="/contrato" className="text-sm font-semibold text-white hover:text-indigo-400">
+          </Link>
+
+          <Link to="/contrato" className="text-sm font-semibold text-white hover:text-indigo-400">
             Ingresar
-          </a>
-          <a href="/buscar" className="text-sm font-semibold text-white hover:text-indigo-400">
+          </Link>
+
+          <Link to="/buscar" className="text-sm font-semibold text-white hover:text-indigo-400">
             Ver contratos
-          </a>
+          </Link>
+          
         </div>
 
         {/* Login */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/login" className="text-sm font-semibold text-white hover:text-indigo-400">
+          <Link to="/login" className="text-sm font-semibold text-white hover:text-indigo-400">
             Log in →
-          </a>
+          </Link>
         </div>
       </nav>
 
       {/* Menú mobile desplegable */}
       {menuOpen && (
         <div className="lg:hidden bg-gray-900 px-6 pb-6">
-          <a href="/" className="block py-2 text-base font-semibold text-white hover:text-indigo-400">
+
+          <Link to="/" className="block py-2 text-base font-semibold text-white hover:text-indigo-400">
             Inicio
-          </a>
-          <a href="/contrato" className="block py-2 text-base font-semibold text-white hover:text-indigo-400">
+          </Link>
+
+          <Link to="/contrato" className="block py-2 text-base font-semibold text-white hover:text-indigo-400">
             Ingresar
-          </a>
-          <a href="/buscar" className="block py-2 text-base font-semibold text-white hover:text-indigo-400">
+          </Link>
+
+          <Link to="/buscar" className="block py-2 text-base font-semibold text-white hover:text-indigo-400">
             Ver contratos
-          </a>
-          <a href="/login" className="block py-2 text-base font-semibold text-white hover:text-indigo-400">
+          </Link>
+
+          <Link to="/login" className="block py-2 text-base font-semibold text-white hover:text-indigo-400">
             Log in
-          </a>
+          </Link>
+
         </div>
       )}
     </header>

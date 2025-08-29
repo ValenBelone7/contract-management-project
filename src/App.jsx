@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Hero from "./components/Hero";
-import FormContrato from "./components/FormContrato";
-import ManejoContrato from "./components/ManejoContrato";
-import { Header } from "./components/Header";
-import Footer from "./components/Footer";
+import Hero from "./components/layout/Hero";
+import { Header } from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import HeroContracts from "./components/contracts_views/HeroContracts";
+import HeroContratosGuardados from "./components/contracts_views/HeroContractsSaved";
+import HeroLogin from "./components/auth/HeroLogin";
 
 export default function App() {
   const [contratos, setContratos] = useState(
@@ -18,7 +19,7 @@ export default function App() {
   };
 
   return (
-    <div>
+    <main>
       <Header />
       <Routes>
         <Route
@@ -27,16 +28,18 @@ export default function App() {
         />
         <Route
           path="/contrato"
-          element={<FormContrato onAgregar={agregarContrato} />}
+          element={<HeroContracts onAgregar={agregarContrato} />}
         />
         <Route
           path="/buscar"
-          element={<ManejoContrato />}
+          element={<HeroContratosGuardados />}
+        />
+        <Route
+          path="/login"
+          element={<HeroLogin />}
         />
       </Routes>
       <Footer />
-    </div>
+    </main>
   );
 }
-
-
