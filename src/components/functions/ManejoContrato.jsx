@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FormContrato from "./FormContrato";
 
-export default function Buscar() {
+export default function ManejoContrato() {
   const [contratos, setContratos] = useState([]);
   const [editando, setEditando] = useState(null); // índice del contrato a editar
 

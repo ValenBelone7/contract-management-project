@@ -4,7 +4,7 @@ import Hero from "./components/layout/Hero";
 import { Header } from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import HeroContracts from "./components/contracts_views/HeroContracts";
-import HeroContratosGuardados from "./components/contracts_views/HeroContractsSaved";
+import HeroContratosGuardados from "./components/contracts_views/HeroContratosGuardados";
 import HeroLogin from "./components/auth/HeroLogin";
 
 export default function App() {

@@ -1,5 +1,5 @@
 import HeroWrapper from "../layout/HeroWrapper";
-import ManejoContrato from "./ManejoContrato";
+import ManejoContrato from "../functions/ManejoContrato";
 
 export default function HeroContratosGuardados() {
   return (
